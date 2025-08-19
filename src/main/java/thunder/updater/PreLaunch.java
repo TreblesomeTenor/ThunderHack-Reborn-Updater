@@ -18,14 +18,14 @@ public class PreLaunch implements LanguageAdapter {
     static {
         File file = Paths.get(FabricLoader.getInstance().getGameDir().toString(), "mods", version).toFile();
         boolean wasBefore = file.exists();
-        try (BufferedInputStream bis = new BufferedInputStream(new URL("https://github.com/Pan4ur/ThunderHack-Recode/releases/download/latest/" + version).openStream()); FileOutputStream fos = new FileOutputStream(file)) {
+        try (BufferedInputStream bis = new BufferedInputStream(new URL("https://github.com/TreblesomeTenor/ThunderHack-Reborn/releases/download/latest/" + version).openStream()); FileOutputStream fos = new FileOutputStream(file)) {
             byte[] db = new byte[1024];
             int b;
             while ((b = bis.read(db, 0, 1024)) != -1)
                 fos.write(db, 0, b);
 
             if(!wasBefore)
-                JOptionPane.showMessageDialog(null, "Thunderhack has been installed, restart the game");
+                JOptionPane.showMessageDialog(null, "Thunderhack Reborn has been installed, restart the game");
         } catch (Exception e) {
             e.printStackTrace();
         }
