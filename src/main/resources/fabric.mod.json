@@ -5,11 +5,12 @@
   "name": "ThunderUpdater",
   "description": "Mod for updating your ThunderHack",
   "authors": [
-    "pan4ur"
+    "pan4ur",
+    "TreblesomeTenor"
   ],
   "contact": {
-    "homepage": "https://github.com/Pan4ur/",
-    "sources": "https://github.com/Pan4ur/ThunderHack-Updater/"
+    "homepage": "https://github.com/TreblesomeTenor",
+    "sources": "https://github.com/TreblesomeTenor/ThunderHack-Reborn-Updater"
   },
   "license": "GPL-3.0",
   "environment": "*",
